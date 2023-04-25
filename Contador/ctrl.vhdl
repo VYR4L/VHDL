@@ -14,7 +14,7 @@ begin
     j(0) <= '1';
     k(0) <= not(q(2)) and q(1);
     j(1) <= q(0);
-    k(1) <= q(2) or q(0);
+    k(1) <= not(q(0)) or q(2);
     j(2) <= q(1) and not(q(0));
     k(2) <= not(q(0)) or q(1);
 end architecture;
